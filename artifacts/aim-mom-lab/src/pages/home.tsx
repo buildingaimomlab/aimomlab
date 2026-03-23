@@ -35,11 +35,11 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 no-underline">
             <img src="/logo.jpg" alt="Logo" className="w-10 h-10 rounded-full object-cover" />
-            <div className="text-lg font-bold text-[#c47a5a]">AI媽媽研究室</div>
+            <div className="text-lg font-bold text-[#d48a9b]">AI媽媽研究室</div>
           </a>
           <a
             href="#download"
-            className="bg-[#c47a5a] text-white text-sm px-5 py-2 rounded-full hover:bg-[#b36a4a] transition"
+            className="bg-[#d48a9b] text-white text-sm px-5 py-2 rounded-full hover:bg-[#c27385] transition"
           >
             免費下載
           </a>
@@ -48,7 +48,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 py-20 text-center">
-        <p className="text-[#c47a5a] text-sm font-medium tracking-widest uppercase mb-4">
+        <p className="text-[#d48a9b] text-sm font-medium tracking-widest uppercase mb-4">
           每天只需 10 分鐘讓家慢慢變溫柔
         </p>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-[#3d2b1f]">
@@ -64,12 +64,12 @@ export default function Home() {
         </p>
         <a
           href="#download"
-          className="inline-block bg-[#c47a5a] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#b36a4a] transition text-lg shadow-md"
+          className="inline-block bg-[#d48a9b] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#c27385] transition text-lg shadow-md"
         >
           免費下載溫柔 AI 陪伴計畫
         </a>
         <div className="mt-10 flex justify-center">
-          <ChevronDown className="text-[#c47a5a] animate-bounce w-6 h-6" />
+          <ChevronDown className="text-[#d48a9b] animate-bounce w-6 h-6" />
         </div>
       </section>
 
@@ -107,7 +107,7 @@ export default function Home() {
                 key={i}
                 className="bg-white rounded-2xl p-6 shadow-sm border border-[#f0ddd0] text-center"
               >
-                <div className="w-12 h-12 bg-[#fde8dc] rounded-full flex items-center justify-center mx-auto mb-4 text-[#c47a5a]">
+                <div className="w-12 h-12 bg-[#fde8dc] rounded-full flex items-center justify-center mx-auto mb-4 text-[#d48a9b]">
                   {f.icon}
                 </div>
                 <h3 className="font-bold text-[#3d2b1f] mb-2">{f.title}</h3>
@@ -127,7 +127,7 @@ export default function Home() {
               alt="AI媽媽研究室創辦人 Mia"
               className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-[#fde8dc]"
             />
-            <p className="mt-4 text-[#c47a5a] font-medium">創辦人 Mia</p>
+            <p className="mt-4 text-[#d48a9b] font-medium">創辦人 Mia</p>
             <p className="text-sm text-[#7a5c4a]">關於我們</p>
           </div>
           <div className="md:w-2/3">
@@ -154,7 +154,7 @@ export default function Home() {
       </section>
 
       {/* Tagline */}
-      <section className="bg-[#3d2b1f] text-white py-16 text-center">
+      <section className="bg-gradient-to-br from-[#d48a9b] to-[#e8b6c3] text-white py-16 text-center">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-2xl md:text-3xl font-bold leading-relaxed">
             AI 不該取代陪伴，<br />而是讓陪伴變得更輕鬆。
@@ -163,28 +163,32 @@ export default function Home() {
       </section>
 
       {/* Coming Soon */}
-      <section className="bg-white py-20 text-center">
+      <section className="bg-[#fff5ee] py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <span className="inline-block bg-[#fde8dc] text-[#c47a5a] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest">
-            Coming Soon
-          </span>
-          <h2 className="text-3xl font-bold mb-2 text-[#3d2b1f]">即將推出</h2>
-          <h3 className="text-xl font-semibold text-[#c47a5a] mb-8">AI 媽媽實戰課程</h3>
-          <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left max-w-xs mx-auto">
-            <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#c47a5a] flex-shrink-0"></div>
-              AI 親子互動設計
-            </li>
-            <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#c47a5a] flex-shrink-0"></div>
-              每日應用系統
-            </li>
-            <li className="flex items-center gap-3">
-              <div className="w-2 h-2 rounded-full bg-[#c47a5a] flex-shrink-0"></div>
-              真正可持續的 AI 教養方式
-            </li>
-          </ul>
-          <p className="text-[#7a5c4a]">課程即將上線，敬請期待 🤍</p>
+          <div className="bg-white rounded-[2rem] shadow-xl p-10 md:p-14">
+            <span className="inline-block bg-[#fde8dc] text-[#d48a9b] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest">
+              Coming Soon
+            </span>
+            <h2 className="text-3xl font-bold mb-2 text-[#3d2b1f]">即將推出</h2>
+            <h3 className="text-xl font-semibold text-[#d48a9b] mb-8">AI 媽媽實戰課程</h3>
+            <div className="flex justify-center">
+              <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left">
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#d48a9b] flex-shrink-0"></div>
+                  AI 親子互動設計
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#d48a9b] flex-shrink-0"></div>
+                  每日應用系統
+                </li>
+                <li className="flex items-center gap-3">
+                  <div className="w-2 h-2 rounded-full bg-[#d48a9b] flex-shrink-0"></div>
+                  真正可持續的 AI 教養方式
+                </li>
+              </ul>
+            </div>
+            <p className="text-[#7a5c4a]">課程即將上線，敬請期待 🤍</p>
+          </div>
         </div>
       </section>
 
@@ -219,16 +223,16 @@ export default function Home() {
               href={item.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="block bg-white border-2 border-[#f0ddd0] rounded-2xl p-6 text-center hover:border-[#c47a5a] hover:shadow-md transition group"
+              className="block bg-white border-2 border-[#f0ddd0] rounded-2xl p-6 text-center hover:border-[#d48a9b] hover:shadow-md transition group"
             >
               <div className="w-14 h-14 bg-[#fde8dc] rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart className="w-6 h-6 text-[#c47a5a]" />
+                <Heart className="w-6 h-6 text-[#d48a9b]" />
               </div>
               <h3 className="font-bold text-[#3d2b1f] mb-2 text-lg">
                 免費下載 {item.age} 溫柔 AI 陪伴計畫
               </h3>
               <p className="text-sm text-[#7a5c4a] mb-4">{item.desc}</p>
-              <span className="inline-block bg-[#c47a5a] text-white text-sm px-5 py-2 rounded-full group-hover:bg-[#b36a4a] transition">
+              <span className="inline-block bg-[#d48a9b] text-white text-sm px-5 py-2 rounded-full group-hover:bg-[#c27385] transition">
                 立即下載
               </span>
             </a>
@@ -247,8 +251,8 @@ export default function Home() {
                 onClick={() => setActiveDay(i)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition ${
                   activeDay === i
-                    ? "bg-[#c47a5a] text-white"
-                    : "bg-white border border-[#f0ddd0] text-[#7a5c4a] hover:border-[#c47a5a]"
+                    ? "bg-[#d48a9b] text-white"
+                    : "bg-white border border-[#f0ddd0] text-[#7a5c4a] hover:border-[#d48a9b]"
                 }`}
               >
                 {d.day}
@@ -256,7 +260,7 @@ export default function Home() {
             ))}
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-[#f0ddd0] max-w-2xl mx-auto">
-            <div className="inline-block bg-[#fde8dc] text-[#c47a5a] text-xs font-bold px-3 py-1 rounded-full mb-4">
+            <div className="inline-block bg-[#fde8dc] text-[#d48a9b] text-xs font-bold px-3 py-1 rounded-full mb-4">
               {days[activeDay].day}
             </div>
             <h3 className="text-xl font-bold text-[#3d2b1f] mb-6">
@@ -264,15 +268,15 @@ export default function Home() {
             </h3>
             <div className="space-y-4">
               <div className="bg-[#fef9f5] rounded-xl p-4">
-                <p className="text-xs font-bold text-[#c47a5a] mb-1">媽媽溫柔提醒</p>
+                <p className="text-xs font-bold text-[#d48a9b] mb-1">媽媽溫柔提醒</p>
                 <p className="text-[#3d2b1f] text-sm">{days[activeDay].reminder}</p>
               </div>
               <div className="bg-[#fef9f5] rounded-xl p-4">
-                <p className="text-xs font-bold text-[#c47a5a] mb-1">AI 回應示範</p>
+                <p className="text-xs font-bold text-[#d48a9b] mb-1">AI 回應示範</p>
                 <p className="text-[#3d2b1f] text-sm">{days[activeDay].aiResponse}</p>
               </div>
               <div className="bg-[#fef9f5] rounded-xl p-4">
-                <p className="text-xs font-bold text-[#c47a5a] mb-1">互動小遊戲</p>
+                <p className="text-xs font-bold text-[#d48a9b] mb-1">互動小遊戲</p>
                 <p className="text-[#3d2b1f] text-sm">{days[activeDay].game}</p>
               </div>
             </div>
@@ -281,7 +285,7 @@ export default function Home() {
             <p className="text-[#7a5c4a] mb-4">想看完整 7 天對話？立即免費下載完整計畫 🤍</p>
             <a
               href="#download"
-              className="inline-block bg-[#c47a5a] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#b36a4a] transition"
+              className="inline-block bg-[#d48a9b] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#c27385] transition"
             >
               免費下載溫柔 AI 陪伴計畫
             </a>

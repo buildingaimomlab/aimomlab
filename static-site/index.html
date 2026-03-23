@@ -17,8 +17,8 @@
       --bg-peach: #fde8dc;
       --dark: #3d2b1f;
       --mid: #7a5c4a;
-      --accent: #c47a5a;
-      --accent-dark: #b36a4a;
+      --accent: #d48a9b;
+      --accent-dark: #c27385;
       --border: #f0ddd0;
       --white: #ffffff;
     }
@@ -100,7 +100,7 @@
       border-radius: 9999px;
       text-decoration: none;
       font-size: 1.05rem;
-      box-shadow: 0 4px 14px rgba(196,122,90,0.3);
+      box-shadow: 0 4px 14px rgba(212,138,155,0.3);
       transition: background 0.2s, transform 0.1s;
     }
     .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
@@ -118,7 +118,6 @@
 
     /* Features */
     .section-warm { background: var(--bg-warm); }
-    .section-dark { background: var(--dark); color: white; }
     .section-peach { background: var(--bg-peach); }
 
     .section { padding: 4rem 0; }
@@ -195,6 +194,8 @@
     .tagline-section {
       padding: 5rem 1.5rem;
       text-align: center;
+      background: linear-gradient(to bottom right, #d48a9b, #e8b6c3);
+      color: white;
     }
     .tagline-section h2 {
       font-size: clamp(1.5rem, 3vw, 2rem);
@@ -241,7 +242,7 @@
     }
     .download-card:hover {
       border-color: var(--accent);
-      box-shadow: 0 4px 16px rgba(196,122,90,0.15);
+      box-shadow: 0 4px 16px rgba(212,138,155,0.15);
     }
     .download-icon {
       width: 3.5rem;
@@ -253,6 +254,7 @@
       justify-content: center;
       margin: 0 auto 1rem;
       font-size: 1.4rem;
+      color: var(--accent);
     }
     .download-card h3 { font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; font-size: 1rem; line-height: 1.4; }
     .download-card p { font-size: 0.85rem; color: var(--mid); margin-bottom: 1.25rem; }
@@ -399,22 +401,22 @@
       <p class="section-subtitle">這份對話包不是要你成為更厲害的父母，只是想在一天結束時，留下一個小小的空間。</p>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">🕐</div>
+          <div class="feature-icon" style="color: var(--accent);">🕐</div>
           <h3>每天 1 個問題</h3>
           <p>簡單易做，不會增加負擔。每天短短的時光，累積深厚的情感。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">💬</div>
+          <div class="feature-icon" style="color: var(--accent);">💬</div>
           <h3>AI範例回應 & 溫柔提醒</h3>
           <p>學會怎麼回應孩子、引導情緒。不批判，只傾聽，建立安全感。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🎮</div>
+          <div class="feature-icon" style="color: var(--accent);">🎮</div>
           <h3>小互動遊戲建議</h3>
           <p>增加親子互動的趣味。透過遊戲，讓對話變得輕鬆自然。</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">👨‍👩‍👧</div>
+          <div class="feature-icon" style="color: var(--accent);">👨‍👩‍👧</div>
           <h3>專屬年齡分組</h3>
           <p>對應孩子不同發展階段，提供最適合的對話深度與內容。</p>
         </div>
@@ -452,23 +454,23 @@
   </section>
 
   <!-- Tagline -->
-  <div class="section-dark">
-    <div class="tagline-section">
-      <h2>AI 不該取代陪伴，<br>而是讓陪伴變得更輕鬆。</h2>
-    </div>
-  </div>
+  <section class="tagline-section">
+    <h2>AI 不該取代陪伴，<br>而是讓陪伴變得更輕鬆。</h2>
+  </section>
 
   <!-- Coming Soon -->
-  <section style="background: var(--white); padding: 5rem 1.5rem; text-align: center;">
-    <div style="max-width: 640px; margin: 0 auto;">
+  <section class="section-warm" style="padding: 5rem 1.5rem; text-align: center;">
+    <div style="max-width: 640px; margin: 0 auto; background: var(--white); border-radius: 2rem; padding: 3.5rem 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
       <div class="badge">Coming Soon</div>
       <h2 style="font-size: 2rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem;">即將推出</h2>
       <h3 style="font-size: 1.25rem; color: var(--accent); font-weight: 600; margin-bottom: 2rem;">AI 媽媽實戰課程</h3>
-      <ul style="list-style: none; color: var(--mid); margin-bottom: 2rem; display: inline-block; text-align: left;">
-        <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> AI 親子互動設計</li>
-        <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> 每日應用系統</li>
-        <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> 真正可持續的 AI 教養方式</li>
-      </ul>
+      <div style="display: flex; justify-content: center;">
+        <ul style="list-style: none; color: var(--mid); margin-bottom: 2rem; text-align: left;">
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> AI 親子互動設計</li>
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> 每日應用系統</li>
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> 真正可持續的 AI 教養方式</li>
+        </ul>
+      </div>
       <p style="color: var(--mid);">課程即將上線，敬請期待 🤍</p>
     </div>
   </section>
@@ -480,19 +482,25 @@
       <p class="section-subtitle">選擇適合您孩子的年齡段，立即下載 7 天溫柔陪伴計畫。</p>
       <div class="download-grid">
         <a href="https://aimomlab.kit.com/3to5old" target="_blank" rel="noopener noreferrer" class="download-card">
-          <div class="download-icon">🤍</div>
+          <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
           <h3>免費下載 3-5 歲溫柔 AI 陪伴計畫</h3>
           <p>孩子情緒來時不知道怎麼回應？</p>
           <span class="btn-download">立即下載</span>
         </a>
         <a href="https://aimomlab.kit.com/6to9old" target="_blank" rel="noopener noreferrer" class="download-card">
-          <div class="download-icon">🤍</div>
+          <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
           <h3>免費下載 6-9 歲溫柔 AI 陪伴計畫</h3>
           <p>想引導學習但不想變成壓力？</p>
           <span class="btn-download">立即下載</span>
         </a>
         <a href="https://aimomlab.kit.com/10to12old" target="_blank" rel="noopener noreferrer" class="download-card">
-          <div class="download-icon">🤍</div>
+          <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
           <h3>免費下載 10-12 歲溫柔 AI 陪伴計畫</h3>
           <p>不知道該怎麼拉近跟孩子的距離?</p>
           <span class="btn-download">立即下載</span>
