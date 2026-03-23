@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "AI媽媽研究室"
+version = "1.0.0"
+id = "artifacts/aim-mom-lab"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25191
+
+[services.development]
+run = "pnpm --filter @workspace/aim-mom-lab run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/aim-mom-lab", "run", "build" ]
+publicDir = "artifacts/aim-mom-lab/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25191"
+BASE_PATH = "/"
