@@ -33,7 +33,10 @@ export default function Home() {
       {/* Nav */}
       <nav className="bg-[#fef9f5]/90 backdrop-blur-sm sticky top-0 z-50 border-b border-[#f0ddd0]">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="text-lg font-bold text-[#c47a5a]">AI媽媽研究室</div>
+          <a href="#" className="flex items-center gap-3 no-underline">
+            <img src="/logo.jpg" alt="Logo" className="w-10 h-10 rounded-full object-cover" />
+            <div className="text-lg font-bold text-[#c47a5a]">AI媽媽研究室</div>
+          </a>
           <a
             href="#download"
             className="bg-[#c47a5a] text-white text-sm px-5 py-2 rounded-full hover:bg-[#b36a4a] transition"
@@ -160,17 +163,26 @@ export default function Home() {
       </section>
 
       {/* Coming Soon */}
-      <section className="bg-[#fff5ee] py-16 text-center">
-        <div className="max-w-xl mx-auto px-6">
-          <span className="inline-block bg-[#fde8dc] text-[#c47a5a] text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
+      <section className="bg-white py-20 text-center">
+        <div className="max-w-2xl mx-auto px-6">
+          <span className="inline-block bg-[#fde8dc] text-[#c47a5a] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest">
             Coming Soon
           </span>
-          <h2 className="text-2xl font-bold mb-2 text-[#3d2b1f]">即將推出</h2>
-          <h3 className="text-xl font-semibold text-[#c47a5a] mb-6">AI 媽媽實戰課程</h3>
-          <ul className="space-y-2 text-[#7a5c4a] mb-6">
-            <li>AI 親子互動設計</li>
-            <li>每日應用系統</li>
-            <li>真正可持續的 AI 教養方式</li>
+          <h2 className="text-3xl font-bold mb-2 text-[#3d2b1f]">即將推出</h2>
+          <h3 className="text-xl font-semibold text-[#c47a5a] mb-8">AI 媽媽實戰課程</h3>
+          <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left max-w-xs mx-auto">
+            <li className="flex items-center gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#c47a5a] flex-shrink-0"></div>
+              AI 親子互動設計
+            </li>
+            <li className="flex items-center gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#c47a5a] flex-shrink-0"></div>
+              每日應用系統
+            </li>
+            <li className="flex items-center gap-3">
+              <div className="w-2 h-2 rounded-full bg-[#c47a5a] flex-shrink-0"></div>
+              真正可持續的 AI 教養方式
+            </li>
           </ul>
           <p className="text-[#7a5c4a]">課程即將上線，敬請期待 🤍</p>
         </div>

@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
 @layer base {
+  :root {
+    --bg: #fef9f5;
+    --bg-warm: #fff5ee;
+    --bg-peach: #fde8dc;
+    --dark: #3d2b1f;
+    --mid: #7a5c4a;
+    --accent: #c47a5a;
+    --accent-dark: #b36a4a;
+    --border: #f0ddd0;
+    --white: #ffffff;
+  }
+
   * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +22,7 @@
   body {
     font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
     -webkit-font-smoothing: antialiased;
-    background-color: #fef9f5;
-    color: #3d2b1f;
+    background-color: var(--bg);
+    color: var(--dark);
   }
 }
