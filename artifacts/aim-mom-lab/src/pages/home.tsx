@@ -75,7 +75,7 @@ export default function Home() {
       {/* Features */}
       <section className="bg-[#fff5ee] py-16">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="font-bold text-center mb-3 text-[#806b60] border-t-[#3d2b1f] border-r-[#3d2b1f] border-b-[#3d2b1f] border-l-[#3d2b1f] text-[26px]">計畫特色</h2>
+          <h2 className="font-bold text-center mb-3 text-[#806b60] border-t-[#3d2b1f] border-r-[#3d2b1f] border-b-[#3d2b1f] border-l-[#3d2b1f] text-[30px]">計畫特色</h2>
           <p className="text-center text-[#7a5c4a] mb-12 max-w-xl mx-auto">
             這份對話包不是要你成為更厲害的父母，只是想在一天結束時，留下一個小小的空間。
           </p>
