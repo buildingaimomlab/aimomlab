@@ -269,7 +269,7 @@ export default function Home() {
               </div>
               <div className="bg-[#fef9f5] rounded-xl p-4">
                 <p className="font-bold mb-1 text-[#ffc1c2] bg-[transparent] text-[16px]">互動小遊戲</p>
-                <p className="text-[#3d2b1f] text-sm">{days[activeDay].game}</p>
+                <p className="text-sm text-[#806b60]">{days[activeDay].game}</p>
               </div>
             </div>
           </div>
