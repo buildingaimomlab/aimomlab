@@ -277,7 +277,7 @@ export default function Home() {
             <p className="text-[#7a5c4a] mb-4">想看完整 7 天對話？立即免費下載完整計畫 🤍</p>
             <a
               href="#download"
-              className="inline-block bg-[#d48a9b] text-white font-semibold px-8 py-3 rounded-full hover:bg-[#c27385] transition"
+              className="inline-block font-semibold px-8 py-3 rounded-full hover:bg-[#c27385] transition bg-[#ffa8aa] text-[#ffffff]"
             >
               免費下載溫柔 AI 陪伴計畫
             </a>
