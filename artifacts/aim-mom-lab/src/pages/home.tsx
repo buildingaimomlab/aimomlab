@@ -139,7 +139,7 @@ export default function Home() {
               <p>在你已經很努力的時候，喘一口氣，</p>
               <p>擁抱沒被好好抱過的自己。</p>
               <p>你們不是孤單一人，讓我們一起溫柔地陪伴孩子長大。</p>
-              <p className="text-[#3d2b1f] font-medium">
+              <p className="font-medium text-[#806b60] bg-[transparent]">
                 當媽媽被理解，孩子就會慢慢安心；
                 <br />
                 當孩子被看見，家庭就會慢慢和諧。
