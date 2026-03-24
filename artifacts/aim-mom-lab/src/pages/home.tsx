@@ -45,13 +45,12 @@ export default function Home() {
           </a>
         </div>
       </nav>
-
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 py-20 text-center">
         <p className="text-[#d48a9b] text-sm font-medium tracking-widest uppercase mb-4">
           每天只需 10 分鐘讓家慢慢變溫柔
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-[#3d2b1f]">
+        <h1 className="text-4xl md:text-5xl leading-tight mb-6 text-[#806b60] bg-[transparent] font-black">
           7天溫柔AI陪伴計畫
         </h1>
         <div className="space-y-3 text-[#7a5c4a] text-base md:text-lg max-w-xl mx-auto mb-10">
@@ -72,7 +71,6 @@ export default function Home() {
           <ChevronDown className="text-[#d48a9b] animate-bounce w-6 h-6" />
         </div>
       </section>
-
       {/* Features */}
       <section className="bg-[#fff5ee] py-16">
         <div className="max-w-5xl mx-auto px-6">
@@ -117,7 +115,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* About */}
       <section className="max-w-5xl mx-auto px-6 py-20">
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -152,7 +149,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Tagline */}
       <section className="bg-gradient-to-br from-[#d48a9b] to-[#e8b6c3] text-white py-16 text-center">
         <div className="max-w-3xl mx-auto px-6">
@@ -161,7 +157,6 @@ export default function Home() {
           </h2>
         </div>
       </section>
-
       {/* Coming Soon */}
       <section className="bg-[#fff5ee] py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
@@ -191,7 +186,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Download */}
       <section id="download" className="max-w-5xl mx-auto px-6 py-20">
         <h2 className="text-2xl font-bold text-center mb-3 text-[#3d2b1f]">
@@ -239,7 +233,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
       {/* Preview */}
       <section className="bg-[#fff5ee] py-16">
         <div className="max-w-5xl mx-auto px-6">
@@ -292,7 +285,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Footer CTA */}
       <section className="bg-[#fde8dc] py-16 text-center">
         <div className="max-w-3xl mx-auto px-6">
@@ -309,7 +301,6 @@ export default function Home() {
           </a>
         </div>
       </section>
-
       {/* Footer */}
       <footer className="bg-[#3d2b1f] text-[#b89080] text-center py-6 text-sm">
         <p>© 2025 AI媽媽研究室. All rights reserved.</p>
