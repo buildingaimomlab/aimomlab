@@ -192,9 +192,7 @@ export default function Home() {
         <h2 className="font-bold text-center mb-3 text-[#806b60] text-[30px]">
           免費下載溫柔 AI 陪伴計畫
         </h2>
-        <p className="text-center text-[#7a5c4a] mb-10">
-          選擇適合您孩子的年齡段，立即下載 7 天溫柔陪伴計畫。
-        </p>
+        <p className="text-center mb-10 text-[#806b60]">選擇適合您孩子的年齡段，立即下載 7 天溫柔陪伴計畫</p>
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
