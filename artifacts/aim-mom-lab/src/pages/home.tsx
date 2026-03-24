@@ -233,7 +233,7 @@ export default function Home() {
         </div>
       </section>
       {/* Preview */}
-      <section className="bg-[#fff5ee] py-16">
+      <section className="py-16 bg-[#fcfaf8] text-[#3d2b1f]">
         <div className="max-w-5xl mx-auto px-6">
           <h2 className="font-bold text-center mb-10 text-[#806b60] text-[30px]">計畫內容預覽</h2>
           <div className="flex gap-3 justify-center mb-8">
