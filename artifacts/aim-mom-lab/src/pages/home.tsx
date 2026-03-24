@@ -106,7 +106,7 @@ export default function Home() {
                 key={i}
                 className="bg-white rounded-2xl p-6 shadow-sm border border-[#f0ddd0] text-center"
               >
-                <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 bg-[#fef4f3] text-[#d48a9b]">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ffa8aa] bg-[#fef4f3]">
                   {f.icon}
                 </div>
                 <h3 className="font-bold mb-2 text-[#806b60] bg-[transparent] text-[17px]">{f.title}</h3>
