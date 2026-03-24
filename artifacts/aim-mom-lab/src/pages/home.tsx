@@ -183,7 +183,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <p className="text-[#7a5c4a]">課程即將上線，敬請期待 🤍</p>
+            <p className="text-[#7a5c4a] font-semibold">課程即將上線，敬請期待 🤍</p>
           </div>
         </div>
       </section>
