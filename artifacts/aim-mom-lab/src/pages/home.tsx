@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#fef9f5] text-[#3d2b1f] font-sans">
       {/* Nav */}
-      <nav className="bg-[#fef9f5]/90 backdrop-blur-sm sticky top-0 z-50 border-b border-[#f0ddd0]">
+      <nav className="backdrop-blur-sm sticky top-0 z-50 border-b border-[#f0ddd0] bg-[#ffffff] text-[#3d2b1f]">
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between bg-[#ffffff] text-[#3d2b1f] opacity-[0.8]">
           <a href="#" className="flex items-center gap-3 no-underline">
             <img src="/logo.jpg" alt="Logo" className="w-10 h-10 rounded-full object-cover" />
