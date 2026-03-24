@@ -39,7 +39,7 @@ export default function Home() {
           </a>
           <a
             href="#download"
-            className="bg-[#d48a9b] text-white text-sm px-5 py-2 rounded-full hover:bg-[#c27385] transition"
+            className="text-sm px-5 py-2 rounded-full hover:bg-[#c27385] transition bg-[#ffa8aa] text-[#ffffff]"
           >
             免費下載
           </a>
