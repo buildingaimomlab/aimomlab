@@ -169,7 +169,7 @@ export default function Home() {
             <h3 className="font-semibold mb-8 text-[#806b60] bg-[transparent] text-[36px]">AI媽媽實戰課程</h3>
             <div className="flex justify-center">
               <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left">
-                <li className="flex items-center gap-3">
+                <li className="flex items-center gap-3 font-semibold">
                   <div className="w-2 h-2 rounded-full flex-shrink-0 bg-[#ffa8aa]"></div>
                   AI 親子互動設計
                 </li>
