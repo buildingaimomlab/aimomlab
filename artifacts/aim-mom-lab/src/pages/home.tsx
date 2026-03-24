@@ -252,7 +252,7 @@ export default function Home() {
             ))}
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-[#f0ddd0] max-w-2xl mx-auto">
-            <div className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4 text-[#ffa8aa] bg-[#ffeeee]">
+            <div className="inline-block text-xs font-bold px-3 py-1 rounded-full mb-4 bg-[#ffeeee] text-[#ffa8aa] border-t-[#d48a9b] border-r-[#d48a9b] border-b-[#d48a9b] border-l-[#d48a9b]">
               {days[activeDay].day}
             </div>
             <h3 className="text-xl font-bold mb-6 text-[#806b60] bg-[transparent]">
