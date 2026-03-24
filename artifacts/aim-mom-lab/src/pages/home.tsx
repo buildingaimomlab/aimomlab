@@ -129,7 +129,7 @@ export default function Home() {
             <p className="text-sm text-[#7a5c4a]">關於我們</p>
           </div>
           <div className="md:w-2/3">
-            <h2 className="text-2xl font-bold mb-6 text-[#806b60] bg-[transparent]">AI媽媽研究室</h2>
+            <h2 className="font-bold mb-6 text-[#806b60] bg-[transparent] text-[30px]">AI媽媽研究室</h2>
             <div className="space-y-4 leading-relaxed font-medium text-[#806b60] bg-[transparent]">
               <p>我是兩個孩子的媽媽，在育兒的路上我也跌倒哭過。</p>
               <p>
