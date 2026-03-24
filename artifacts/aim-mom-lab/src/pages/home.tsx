@@ -118,7 +118,7 @@ export default function Home() {
       </section>
       {/* About */}
       <section className="max-w-5xl mx-auto px-6 py-20">
-        <div className="flex flex-col md:flex-row items-center gap-12">
+        <div className="flex flex-col md:flex-row items-center gap-12 text-[#806b60] font-semibold">
           <div className="md:w-1/3 flex flex-col items-center">
             <img
               src="https://aim-mom-lab--moijour79620.replit.app/assets/%E6%9C%AA%E5%91%BD%E5%90%8D-1_1773986778613-BjOBl2Pv.png"
