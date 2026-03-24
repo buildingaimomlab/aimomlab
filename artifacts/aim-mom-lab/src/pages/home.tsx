@@ -260,7 +260,7 @@ export default function Home() {
             </h3>
             <div className="space-y-4">
               <div className="bg-[#fef9f5] rounded-xl p-4">
-                <p className="text-xs font-bold text-[#d48a9b] mb-1">媽媽溫柔提醒</p>
+                <p className="font-bold mb-1 text-[#c4856a] bg-[transparent] text-[16px]">媽媽溫柔提醒</p>
                 <p className="text-sm text-[#c4856a]">{days[activeDay].reminder}</p>
               </div>
               <div className="bg-[#fef9f5] rounded-xl p-4">
