@@ -35,7 +35,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="#" className="flex items-center gap-3 no-underline">
             <img src="/logo.jpg" alt="Logo" className="w-10 h-10 rounded-full object-cover" />
-            <div className="text-lg font-bold text-[#d48a9b]">AI媽媽研究室</div>
+            <div className="text-lg font-bold text-[#ffa8aa]">AI媽媽研究室</div>
           </a>
           <a
             href="#download"
