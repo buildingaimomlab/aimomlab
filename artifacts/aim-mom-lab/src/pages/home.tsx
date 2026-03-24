@@ -221,7 +221,7 @@ export default function Home() {
               <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ffa8aa] border-t-[#ffa8aa] border-r-[#ffa8aa] border-b-[#ffa8aa] border-l-[#ffa8aa] bg-[#fef4f3]">
                 <Heart className="w-6 h-6 text-[#d48a9b]" />
               </div>
-              <h3 className="font-bold text-[#3d2b1f] mb-2 text-lg">
+              <h3 className="font-bold mb-2 text-lg text-[#806b60] bg-[transparent]">
                 免費下載 {item.age} 溫柔 AI 陪伴計畫
               </h3>
               <p className="text-sm text-[#7a5c4a] mb-4">{item.desc}</p>
