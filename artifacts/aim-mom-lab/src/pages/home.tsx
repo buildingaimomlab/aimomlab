@@ -227,7 +227,7 @@ export default function Home() {
                 免費下載 {item.age} 溫柔 AI 陪伴計畫
               </h3>
               <p className="text-sm text-[#7a5c4a] mb-4">{item.desc}</p>
-              <span className="inline-block text-sm px-5 py-2 rounded-full group-hover:bg-[#c27385] transition bg-[#ffa8aa] text-[#ffffff]">
+              <span className="inline-block text-sm px-5 py-2 rounded-full group-hover:bg-[#c27385] transition text-[#ffffff] bg-[#ffa8aa]">
                 立即下載
               </span>
             </a>
