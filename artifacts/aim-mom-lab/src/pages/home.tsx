@@ -178,7 +178,7 @@ export default function Home() {
                   每日應用系統
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[#d48a9b] flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full flex-shrink-0 bg-[#ffa8aa]"></div>
                   真正可持續的 AI 教養方式
                 </li>
               </ul>
