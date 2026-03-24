@@ -165,7 +165,7 @@ export default function Home() {
             <span className="inline-block bg-[#fde8dc] text-[#d48a9b] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest">
               Coming Soon
             </span>
-            <h2 className="text-3xl font-bold mb-2 text-[#3d2b1f]">即將推出</h2>
+            <h2 className="text-3xl font-bold mb-2 text-[#806b60] bg-[transparent]">即將推出</h2>
             <h3 className="text-xl font-semibold text-[#d48a9b] mb-8">AI 媽媽實戰課程</h3>
             <div className="flex justify-center">
               <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left">
