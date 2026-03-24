@@ -301,7 +301,7 @@ export default function Home() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="bg-[#3d2b1f] text-[#b89080] text-center py-6 text-sm">
+      <footer className="text-center py-6 text-sm bg-[#f5f2ef] text-[#b89080]">
         <p>© 2025 AI媽媽研究室. All rights reserved.</p>
       </footer>
     </div>
