@@ -59,7 +59,7 @@ export default function Home() {
           <p>AI 很強，但不知道怎麼用在孩子身上？</p>
           <p>想陪伴孩子成長，但時間總是不夠？</p>
         </div>
-        <p className="text-[#3d2b1f] font-medium mb-8 text-lg">
+        <p className="mb-8 text-lg text-[#806b60] border-t-[#3d2b1f] border-r-[#3d2b1f] border-b-[#3d2b1f] border-l-[#3d2b1f] font-semibold bg-[transparent]">
           AI媽媽研究室幫你把 AI 變成每天都能用的育兒工具
         </p>
         <a
