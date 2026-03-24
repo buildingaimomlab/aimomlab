@@ -287,7 +287,7 @@ export default function Home() {
       {/* Footer CTA */}
       <section className="py-16 text-center bg-[#fcf5f3] text-[#3d2b1f]">
         <div className="max-w-3xl mx-auto px-6 bg-[#ffffff] text-[#3d2b1f] rounded-tl-[30px] rounded-tr-[30px] rounded-br-[30px] rounded-bl-[30px]">
-          <h2 className="text-2xl font-bold text-[#3d2b1f] mb-4">溫柔，是最好的陪伴</h2>
+          <h2 className="text-2xl font-bold mb-4 text-[#806b60] bg-[transparent]">溫柔，是最好的陪伴</h2>
           <p className="text-[#7a5c4a] mb-2">陪伴不在於時間長短，而在於那份全然的專注。</p>
           <p className="text-[#7a5c4a] mb-8">願這七天，成為您與孩子心中最柔軟的記憶。</p>
           <a
