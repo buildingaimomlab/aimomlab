@@ -268,7 +268,7 @@ export default function Home() {
                 <p className="text-sm text-[#78716c]">{days[activeDay].aiResponse}</p>
               </div>
               <div className="bg-[#fef9f5] rounded-xl p-4">
-                <p className="text-xs font-bold mb-1 text-[#ffc1c2] bg-[transparent]">互動小遊戲</p>
+                <p className="font-bold mb-1 text-[#ffc1c2] bg-[transparent] text-[16px]">互動小遊戲</p>
                 <p className="text-[#3d2b1f] text-sm">{days[activeDay].game}</p>
               </div>
             </div>
