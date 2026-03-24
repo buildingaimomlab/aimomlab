@@ -183,7 +183,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <p className="text-[#7a5c4a] bg-[#fff5ee] font-medium border-t-[5px] border-r-[5px] border-b-[5px] border-l-[5px] border-t-[#fff5ee] border-r-[#fff5ee] border-b-[#fff5ee] border-l-[#fff5ee] rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] ml-[2px] mr-[2px] mt-[2px] mb-[2px]">課程即將上線，敬請期待 🤍</p>
+            <p className="text-[#7a5c4a] bg-[#fff5ee] border-t-[5px] border-r-[5px] border-b-[5px] border-l-[5px] border-t-[#fff5ee] border-r-[#fff5ee] border-b-[#fff5ee] border-l-[#fff5ee] rounded-tl-[20px] rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px] ml-[2px] mr-[2px] mt-[2px] mb-[2px] font-normal">課程即將上線，敬請期待 🤍</p>
           </div>
         </div>
       </section>
