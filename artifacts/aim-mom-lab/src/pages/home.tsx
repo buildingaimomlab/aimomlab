@@ -47,7 +47,7 @@ export default function Home() {
       </nav>
       {/* Hero */}
       <section className="max-w-5xl mx-auto px-6 py-20 text-center">
-        <p className="text-[#d48a9b] text-sm font-medium tracking-widest uppercase mb-4">
+        <p className="text-sm font-medium tracking-widest uppercase mb-4 text-[#ffa8aa] bg-[transparent]">
           每天只需 10 分鐘讓家慢慢變溫柔
         </p>
         <h1 className="text-4xl md:text-5xl leading-tight mb-6 text-[#806b60] bg-[transparent] font-black">
