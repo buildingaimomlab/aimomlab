@@ -224,7 +224,7 @@ export default function Home() {
               <h3 className="font-bold mb-2 text-lg text-[#806b60] bg-[transparent]">
                 免費下載 {item.age} 溫柔 AI 陪伴計畫
               </h3>
-              <p className="text-sm text-[#7a5c4a] mb-4">{item.desc}</p>
+              <p className="text-sm mb-4 text-[#806b60] bg-[transparent]">{item.desc}</p>
               <span className="inline-block text-sm px-5 py-2 rounded-full group-hover:bg-[#c27385] transition text-[#ffffff] bg-[#ffa8aa]">
                 立即下載
               </span>
