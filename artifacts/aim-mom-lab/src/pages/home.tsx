@@ -53,7 +53,7 @@ export default function Home() {
         <h1 className="text-4xl md:text-5xl leading-tight mb-6 text-[#806b60] bg-[transparent] font-black">
           7天溫柔AI陪伴計畫
         </h1>
-        <div className="space-y-3 text-[#7a5c4a] text-base md:text-lg max-w-xl mx-auto mb-10">
+        <div className="space-y-3 text-base md:text-lg max-w-xl mx-auto mb-10 text-[#806b60] border-t-[#7a5c4a] border-r-[#7a5c4a] border-b-[#7a5c4a] border-l-[#7a5c4a]">
           <p
             className="text-[#806b60] border-t-[#7a5c4a] border-r-[#7a5c4a] border-b-[#7a5c4a] border-l-[#7a5c4a]">每天陪孩子學習卻不知道怎麼開始？</p>
           <p>AI 很強，但不知道怎麼用在孩子身上？</p>
