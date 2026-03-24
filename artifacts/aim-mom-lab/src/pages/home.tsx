@@ -109,8 +109,8 @@ export default function Home() {
                 <div className="w-12 h-12 bg-[#fde8dc] rounded-full flex items-center justify-center mx-auto mb-4 text-[#d48a9b]">
                   {f.icon}
                 </div>
-                <h3 className="font-bold text-[#3d2b1f] mb-2">{f.title}</h3>
-                <p className="text-sm text-[#7a5c4a] leading-relaxed">{f.desc}</p>
+                <h3 className="font-bold mb-2 text-[#806b60] bg-[transparent] text-[17px]">{f.title}</h3>
+                <p className="text-sm leading-relaxed text-[#806b60] bg-[transparent]">{f.desc}</p>
               </div>
             ))}
           </div>
