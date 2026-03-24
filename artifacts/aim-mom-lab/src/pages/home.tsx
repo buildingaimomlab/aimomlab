@@ -220,7 +220,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="block bg-white border-2 border-[#f0ddd0] rounded-2xl p-6 text-center hover:border-[#d48a9b] hover:shadow-md transition group"
             >
-              <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ffa8aa] bg-[#fef4f3] border-t-[#ffa8aa] border-r-[#ffa8aa] border-b-[#ffa8aa] border-l-[#ffa8aa]">
+              <div className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 text-[#ffa8aa] border-t-[#ffa8aa] border-r-[#ffa8aa] border-b-[#ffa8aa] border-l-[#ffa8aa] bg-[#fef4f3]">
                 <Heart className="w-6 h-6 text-[#d48a9b]" />
               </div>
               <h3 className="font-bold text-[#3d2b1f] mb-2 text-lg">
