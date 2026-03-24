@@ -173,7 +173,7 @@ export default function Home() {
                   <div className="w-2 h-2 rounded-full flex-shrink-0 bg-[#ffa8aa]"></div>
                   AI 親子互動設計
                 </li>
-                <li className="flex items-center gap-3">
+                <li className="flex items-center gap-3 font-semibold">
                   <div className="w-2 h-2 rounded-full flex-shrink-0 bg-[#ffa8aa]"></div>
                   每日應用系統
                 </li>
