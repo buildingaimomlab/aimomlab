@@ -170,7 +170,7 @@ export default function Home() {
             <div className="flex justify-center">
               <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left">
                 <li className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[#d48a9b] flex-shrink-0"></div>
+                  <div className="w-2 h-2 rounded-full flex-shrink-0 bg-[#ffa8aa]"></div>
                   AI 親子互動設計
                 </li>
                 <li className="flex items-center gap-3">
