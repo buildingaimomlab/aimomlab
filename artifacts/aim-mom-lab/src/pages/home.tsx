@@ -189,7 +189,7 @@ export default function Home() {
       </section>
       {/* Download */}
       <section id="download" className="max-w-5xl mx-auto px-6 py-20">
-        <h2 className="text-2xl font-bold text-center mb-3 text-[#806b60]">
+        <h2 className="font-bold text-center mb-3 text-[#806b60] text-[30px]">
           免費下載溫柔 AI 陪伴計畫
         </h2>
         <p className="text-center text-[#7a5c4a] mb-10">
