@@ -162,7 +162,7 @@ export default function Home() {
       <section className="bg-[#fff5ee] py-20 text-center">
         <div className="max-w-2xl mx-auto px-6">
           <div className="bg-white rounded-[2rem] shadow-xl p-10 md:p-14">
-            <span className="inline-block bg-[#fde8dc] text-[#d48a9b] text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest">
+            <span className="inline-block text-xs font-bold px-4 py-1.5 rounded-full mb-6 tracking-widest bg-[#fbbf24] text-[#ffffff] border-t-[#d48a9b] border-r-[#d48a9b] border-b-[#d48a9b] border-l-[#d48a9b]">
               Coming Soon
             </span>
             <h2 className="font-bold mb-2 bg-[transparent] text-[#ffa8aa] text-[25px]">即將推出</h2>
