@@ -166,7 +166,7 @@ export default function Home() {
               Coming Soon
             </span>
             <h2 className="text-3xl font-bold mb-2 text-[#806b60] bg-[transparent]">即將推出</h2>
-            <h3 className="text-xl font-semibold text-[#d48a9b] mb-8">AI 媽媽實戰課程</h3>
+            <h3 className="text-xl font-semibold mb-8 text-[#806b60] bg-[transparent]">AI 媽媽實戰課程</h3>
             <div className="flex justify-center">
               <ul className="space-y-4 text-[#7a5c4a] mb-8 text-left">
                 <li className="flex items-center gap-3">
