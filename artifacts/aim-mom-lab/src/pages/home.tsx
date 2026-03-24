@@ -64,7 +64,7 @@ export default function Home() {
         </p>
         <a
           href="#download"
-          className="inline-block bg-[#d48a9b] text-white font-semibold px-8 py-4 rounded-full hover:bg-[#c27385] transition text-lg shadow-md"
+          className="inline-block text-white font-semibold px-8 py-4 rounded-full hover:bg-[#c27385] transition text-lg shadow-md bg-[#ffa8aa]"
         >
           免費下載溫柔 AI 陪伴計畫
         </a>
