@@ -259,7 +259,7 @@ export default function Home() {
               {days[activeDay].question}
             </h3>
             <div className="space-y-4">
-              <div className="rounded-xl p-4 bg-[#ffffff] border-t-[#c4856a] border-r-[#c4856a] border-b-[#c4856a] border-l-[#c4856a] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px]">
+              <div className="rounded-xl p-4 border-t-[#c4856a] border-r-[#c4856a] border-b-[#c4856a] border-l-[#c4856a] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] bg-[#faf3ef] text-[#3d2b1f]">
                 <p className="font-bold mb-1 text-[#c4856a] bg-[transparent] text-[16px]">媽媽溫柔提醒</p>
                 <p className="text-sm text-[#c4856a]">{days[activeDay].reminder}</p>
               </div>
