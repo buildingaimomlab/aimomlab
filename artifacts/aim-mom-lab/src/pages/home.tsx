@@ -110,7 +110,7 @@ export default function Home() {
                   {f.icon}
                 </div>
                 <h3 className="font-bold mb-2 text-[#806b60] bg-[transparent] text-[17px]">{f.title}</h3>
-                <p className="text-sm leading-relaxed text-[#806b60] bg-[transparent]">{f.desc}</p>
+                <p className="text-[#806b60] bg-[transparent] text-[15px]">{f.desc}</p>
               </div>
             ))}
           </div>
