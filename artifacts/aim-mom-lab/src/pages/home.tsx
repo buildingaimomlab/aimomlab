@@ -130,7 +130,7 @@ export default function Home() {
           </div>
           <div className="md:w-2/3">
             <h2 className="text-2xl font-bold mb-6 text-[#806b60] bg-[transparent]">AI媽媽研究室</h2>
-            <div className="space-y-4 text-[#7a5c4a] leading-relaxed font-medium">
+            <div className="space-y-4 leading-relaxed font-medium text-[#806b60] bg-[transparent]">
               <p>我是兩個孩子的媽媽，在育兒的路上我也跌倒哭過。</p>
               <p>
                 後來我自己學會了溫柔教養，希望把這些教養過程結合 AI 的建議，
