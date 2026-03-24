@@ -123,7 +123,7 @@ export default function Home() {
             <img
               src="https://aim-mom-lab--moijour79620.replit.app/assets/%E6%9C%AA%E5%91%BD%E5%90%8D-1_1773986778613-BjOBl2Pv.png"
               alt="AI媽媽研究室創辦人 Mia"
-              className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-[#fde8dc]"
+              className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-[#fde8dc] border-t-[#ffffff] border-r-[#ffffff] border-b-[#ffffff] border-l-[#ffffff] border-t-[3px] border-r-[3px] border-b-[3px] border-l-[3px]"
             />
             <p className="mt-4 text-[#d48a9b] font-medium">創辦人 Mia</p>
             <p className="text-sm text-[#7a5c4a]">關於我們</p>
