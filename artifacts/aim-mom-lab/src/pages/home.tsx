@@ -261,7 +261,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="bg-[#fef9f5] rounded-xl p-4">
                 <p className="text-xs font-bold text-[#d48a9b] mb-1">媽媽溫柔提醒</p>
-                <p className="text-[#3d2b1f] text-sm">{days[activeDay].reminder}</p>
+                <p className="text-sm text-[#c4856a]">{days[activeDay].reminder}</p>
               </div>
               <div className="bg-[#fef9f5] rounded-xl p-4">
                 <p className="text-xs font-bold text-[#d48a9b] mb-1">AI 回應示範</p>
