@@ -235,7 +235,7 @@ export default function Home() {
       {/* Preview */}
       <section className="bg-[#fff5ee] py-16">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl font-bold text-center mb-10 text-[#3d2b1f]">計畫內容預覽</h2>
+          <h2 className="font-bold text-center mb-10 text-[#806b60] text-[30px]">計畫內容預覽</h2>
           <div className="flex gap-3 justify-center mb-8">
             {days.map((d, i) => (
               <button
@@ -255,7 +255,7 @@ export default function Home() {
             <div className="inline-block bg-[#fde8dc] text-[#d48a9b] text-xs font-bold px-3 py-1 rounded-full mb-4">
               {days[activeDay].day}
             </div>
-            <h3 className="text-xl font-bold text-[#3d2b1f] mb-6">
+            <h3 className="text-xl font-bold mb-6 text-[#806b60] bg-[transparent]">
               {days[activeDay].question}
             </h3>
             <div className="space-y-4">
