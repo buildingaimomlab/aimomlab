@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI媽媽研究室 - 7天溫柔AI陪伴計畫</title>
+  <meta name="description" content="AI媽媽研究室幫你把 AI 變成每天都能用的育兒工具。每天只需 10 分鐘，讓家慢慢變溫柔。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #fef9f5;
+      --bg-warm: #fff5ee;
+      --bg-peach: #fde8dc;
+      --dark: #3d2b1f;
+      --mid: #7a5c4a;
+      --accent: #d48a9b;
+      --accent-dark: #c27385;
+      --border: #f0ddd0;
+      --white: #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+      background-color: var(--bg);
+      color: var(--dark);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Nav */
+    nav {
+      background: rgba(254,249,245,0.92);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { font-size: 1.1rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+    .btn-nav {
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      transition: background 0.2s;
+    }
+    .btn-nav:hover { background: var(--accent-dark); }
+
+    /* Container */
+    .container { max-width: 1000px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 1.5rem;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .hero-tag {
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1.5rem;
+      color: var(--dark);
+    }
+    .hero-desc { color: var(--mid); font-size: 1.05rem; margin-bottom: 0.75rem; }
+    .hero-desc:last-of-type { margin-bottom: 2.5rem; }
+    .hero-tagline { font-weight: 500; font-size: 1.1rem; color: var(--dark); margin-bottom: 2rem; }
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      padding: 1rem 2rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 14px rgba(212,138,155,0.3);
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .bounce {
+      display: inline-block;
+      margin-top: 2.5rem;
+      font-size: 1.5rem;
+      color: var(--accent);
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    /* Features */
+    .section-warm { background: var(--bg-warm); }
+    .section-peach { background: var(--bg-peach); }
+
+    .section { padding: 4rem 0; }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.75rem;
+      color: var(--dark);
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--mid);
+      max-width: 500px;
+      margin: 0 auto 3rem;
+      line-height: 1.8;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: var(--white);
+      border-radius: 1rem;
+      padding: 1.75rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .feature-icon {
+      width: 3rem;
+      height: 3rem;
+      background: var(--bg-peach);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.2rem;
+    }
+    .feature-card h3 { font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; font-size: 0.95rem; }
+    .feature-card p { font-size: 0.85rem; color: var(--mid); line-height: 1.7; }
+
+    /* About */
+    .about-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+    }
+    @media (min-width: 768px) {
+      .about-flex { flex-direction: row; }
+      .about-img-wrap { flex: 0 0 280px; }
+      .about-text { flex: 1; }
+    }
+    .about-img-wrap { text-align: center; }
+    .about-img {
+      width: 11rem;
+      height: 11rem;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--bg-peach);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    .about-name { color: var(--accent); font-weight: 600; margin-top: 0.75rem; }
+    .about-role { font-size: 0.85rem; color: var(--mid); }
+    .about-text h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .about-text p { color: var(--mid); margin-bottom: 0.75rem; line-height: 1.8; }
+    .about-text .highlight { color: var(--dark); font-weight: 600; }
+
+    /* Tagline dark section */
+    .tagline-section {
+      padding: 5rem 1.5rem;
+      text-align: center;
+      background: linear-gradient(to bottom right, #d48a9b, #e8b6c3);
+      color: white;
+    }
+    .tagline-section h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      line-height: 1.8;
+    }
+
+    /* Coming Soon */
+    .badge {
+      display: inline-block;
+      background: var(--bg-peach);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .coming-soon { text-align: center; padding: 4rem 1.5rem; }
+    .coming-soon h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .coming-soon h3 { font-size: 1.2rem; color: var(--accent); font-weight: 600; margin-bottom: 1.5rem; }
+    .coming-soon ul { list-style: none; color: var(--mid); margin-bottom: 1.5rem; }
+    .coming-soon ul li { margin-bottom: 0.5rem; }
+    .coming-soon ul li::before { content: "· "; color: var(--accent); }
+    .coming-soon .note { color: var(--mid); }
+
+    /* Download */
+    .download-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .download-card {
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: 1rem;
+      padding: 2rem;
+      text-align: center;
+      text-decoration: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      display: block;
+    }
+    .download-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(212,138,155,0.15);
+    }
+    .download-icon {
+      width: 3.5rem;
+      height: 3.5rem;
+      background: var(--bg-peach);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+      font-size: 1.4rem;
+      color: var(--accent);
+    }
+    .download-card h3 { font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; font-size: 1rem; line-height: 1.4; }
+    .download-card p { font-size: 0.85rem; color: var(--mid); margin-bottom: 1.25rem; }
+    .btn-download {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.5rem;
+      border-radius: 9999px;
+      transition: background 0.2s;
+    }
+    .download-card:hover .btn-download { background: var(--accent-dark); }
+
+    /* Preview */
+    .day-tabs {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .day-tab {
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border: 1px solid var(--border);
+      background: var(--white);
+      color: var(--mid);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .day-tab.active, .day-tab:hover {
+      background: var(--accent);
+      color: white;
+      border-color: var(--accent);
+    }
+    .preview-card {
+      background: var(--white);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      border: 1px solid var(--border);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .day-badge {
+      display: inline-block;
+      background: var(--bg-peach);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      margin-bottom: 1rem;
+    }
+    .preview-question { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 1.5rem; }
+    .preview-item {
+      background: var(--bg);
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .preview-item-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .preview-item-text { font-size: 0.9rem; color: var(--dark); }
+    .preview-cta { text-align: center; margin-top: 2rem; }
+    .preview-cta p { color: var(--mid); margin-bottom: 1rem; }
+
+    /* Footer CTA */
+    .footer-cta {
+      padding: 4rem 1.5rem;
+      text-align: center;
+    }
+    .footer-cta h2 { font-size: 1.6rem; font-weight: 700; color: var(--dark); margin-bottom: 1rem; }
+    .footer-cta p { color: var(--mid); margin-bottom: 0.5rem; }
+    .footer-cta .last-p { margin-bottom: 2rem; }
+    .btn-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #06C755;
+      color: white;
+      font-weight: 700;
+      padding: 0.875rem 2rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background 0.2s;
+      font-size: 1rem;
+    }
+    .btn-line:hover { background: #05b34c; }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: #b89080;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.875rem;
+    }
+
+    /* Day panels */
+    .day-panel { display: none; }
+    .day-panel.active { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="logo" style="display: flex; align-items: center; gap: 0.75rem;">
+        <img src="logo.jpg" alt="Logo" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;" />
+        AI媽媽研究室
+      </a>
+      <a href="#download" class="btn-nav">免費下載</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section>
+    <div class="hero">
+      <span class="hero-tag">每天只需 10 分鐘讓家慢慢變溫柔</span>
+      <h1>7天溫柔AI陪伴計畫</h1>
+      <p class="hero-desc">每天陪孩子學習卻不知道怎麼開始？</p>
+      <p class="hero-desc">AI 很強，但不知道怎麼用在孩子身上？</p>
+      <p class="hero-desc">想陪伴孩子成長，但時間總是不夠？</p>
+      <p class="hero-tagline">AI媽媽研究室幫你把 AI 變成每天都能用的育兒工具</p>
+      <a href="#download" class="btn-primary">免費下載溫柔 AI 陪伴計畫</a>
+      <div><span class="bounce">∨</span></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section-warm">
+    <div class="section container">
+      <h2 class="section-title">計畫特色</h2>
+      <p class="section-subtitle">這份對話包不是要你成為更厲害的父母，只是想在一天結束時，留下一個小小的空間。</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="color: var(--accent);">🕐</div>
+          <h3>每天 1 個問題</h3>
+          <p>簡單易做，不會增加負擔。每天短短的時光，累積深厚的情感。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="color: var(--accent);">💬</div>
+          <h3>AI範例回應 & 溫柔提醒</h3>
+          <p>學會怎麼回應孩子、引導情緒。不批判，只傾聽，建立安全感。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="color: var(--accent);">🎮</div>
+          <h3>小互動遊戲建議</h3>
+          <p>增加親子互動的趣味。透過遊戲，讓對話變得輕鬆自然。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="color: var(--accent);">👨‍👩‍👧</div>
+          <h3>專屬年齡分組</h3>
+          <p>對應孩子不同發展階段，提供最適合的對話深度與內容。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section">
+    <div class="container">
+      <div class="about-flex">
+        <div class="about-img-wrap">
+          <img
+            src="https://aim-mom-lab--moijour79620.replit.app/assets/%E6%9C%AA%E5%91%BD%E5%90%8D-1_1773986778613-BjOBl2Pv.png"
+            alt="AI媽媽研究室創辦人 Mia"
+            class="about-img"
+          />
+          <p class="about-name">創辦人 Mia</p>
+          <p class="about-role">關於我們</p>
+        </div>
+        <div class="about-text">
+          <h2>AI媽媽研究室</h2>
+          <p>我是兩個孩子的媽媽，在育兒的路上我也跌倒哭過。</p>
+          <p>後來我自己學會了溫柔教養，希望把這些教養過程結合 AI 的建議，
+            分享給一起在辛苦育兒路上的媽媽們。</p>
+          <p>在你已經很努力的時候，喘一口氣，</p>
+          <p>擁抱沒被好好抱過的自己。</p>
+          <p>你們不是孤單一人，讓我們一起溫柔地陪伴孩子長大。</p>
+          <p class="highlight">當媽媽被理解，孩子就會慢慢安心；<br>當孩子被看見，家庭就會慢慢和諧。</p>
+          <p>這份對話，不是為了教養成功，</p>
+          <p>而是為了，讓愛有機會被說出來 🤍</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tagline -->
+  <section class="tagline-section">
+    <h2>AI 不該取代陪伴，<br>而是讓陪伴變得更輕鬆。</h2>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="section-warm" style="padding: 5rem 1.5rem; text-align: center;">
+    <div style="max-width: 640px; margin: 0 auto; background: var(--white); border-radius: 2rem; padding: 3.5rem 2.5rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08);">
+      <div class="badge">Coming Soon</div>
+      <h2 style="font-size: 2rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem;">即將推出</h2>
+      <h3 style="font-size: 1.25rem; color: var(--accent); font-weight: 600; margin-bottom: 2rem;">AI 媽媽實戰課程</h3>
+      <div style="display: flex; justify-content: center;">
+        <ul style="list-style: none; color: var(--mid); margin-bottom: 2rem; text-align: left;">
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> AI 親子互動設計</li>
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> 每日應用系統</li>
+          <li style="margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.75rem;"><div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; flex-shrink: 0;"></div> 真正可持續的 AI 教養方式</li>
+        </ul>
+      </div>
+      <p style="color: var(--mid);">課程即將上線，敬請期待 🤍</p>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section class="section" id="download">
+    <div class="container">
+      <h2 class="section-title">免費下載溫柔 AI 陪伴計畫</h2>
+      <p class="section-subtitle">選擇適合您孩子的年齡段，立即下載 7 天溫柔陪伴計畫。</p>
+      <div class="download-grid">
+        <a href="https://aimomlab.kit.com/3to5old" target="_blank" rel="noopener noreferrer" class="download-card">
+          <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>免費下載 3-5 歲溫柔 AI 陪伴計畫</h3>
+          <p>孩子情緒來時不知道怎麼回應？</p>
+          <span class="btn-download">立即下載</span>
+        </a>
+        <a href="https://aimomlab.kit.com/6to9old" target="_blank" rel="noopener noreferrer" class="download-card">
+          <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>免費下載 6-9 歲溫柔 AI 陪伴計畫</h3>
+          <p>想引導學習但不想變成壓力？</p>
+          <span class="btn-download">立即下載</span>
+        </a>
+        <a href="https://aimomlab.kit.com/10to12old" target="_blank" rel="noopener noreferrer" class="download-card">
+          <div class="download-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+          <h3>免費下載 10-12 歲溫柔 AI 陪伴計畫</h3>
+          <p>不知道該怎麼拉近跟孩子的距離?</p>
+          <span class="btn-download">立即下載</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview -->
+  <section class="section-warm">
+    <div class="section container">
+      <h2 class="section-title">計畫內容預覽</h2>
+      <div class="day-tabs">
+        <button class="day-tab active" onclick="showDay(0, this)">Day1</button>
+        <button class="day-tab" onclick="showDay(1, this)">Day2</button>
+        <button class="day-tab" onclick="showDay(2, this)">Day3</button>
+      </div>
+
+      <div class="preview-card">
+        <!-- Day 1 -->
+        <div class="day-panel active" id="day-0">
+          <div class="day-badge">Day1</div>
+          <p class="preview-question">今天最開心的是什麼？</p>
+          <div class="preview-item">
+            <p class="preview-item-label">媽媽溫柔提醒</p>
+            <p class="preview-item-text">用表情和語氣放大孩子的情緒</p>
+          </div>
+          <div class="preview-item">
+            <p class="preview-item-label">AI 回應示範</p>
+            <p class="preview-item-text">「聽起來你那時候真的好開心！」</p>
+          </div>
+          <div class="preview-item">
+            <p class="preview-item-label">互動小遊戲</p>
+            <p class="preview-item-text">畫出今天開心或挑戰的場景，媽媽孩子互換看</p>
+          </div>
+        </div>
+        <!-- Day 2 -->
+        <div class="day-panel" id="day-1">
+          <div class="day-badge">Day2</div>
+          <p class="preview-question">今天有沒有不喜歡的事情？</p>
+          <div class="preview-item">
+            <p class="preview-item-label">媽媽溫柔提醒</p>
+            <p class="preview-item-text">先理解，再給支持</p>
+          </div>
+          <div class="preview-item">
+            <p class="preview-item-label">AI 回應示範</p>
+            <p class="preview-item-text">「是不是有一點不舒服？」</p>
+          </div>
+          <div class="preview-item">
+            <p class="preview-item-label">互動小遊戲</p>
+            <p class="preview-item-text">用黏土捏出今天的不舒服或疲累情緒(沒有黏土也可以自製無毒黏土，用麵粉加水)</p>
+          </div>
+        </div>
+        <!-- Day 3 -->
+        <div class="day-panel" id="day-2">
+          <div class="day-badge">Day3</div>
+          <p class="preview-question">如果今天是小超人，你想幫誰？</p>
+          <div class="preview-item">
+            <p class="preview-item-label">媽媽溫柔提醒</p>
+            <p class="preview-item-text">讚美動機，而不是結果</p>
+          </div>
+          <div class="preview-item">
+            <p class="preview-item-label">AI 回應示範</p>
+            <p class="preview-item-text">「你願意幫他，媽媽覺得你好溫暖。」</p>
+          </div>
+          <div class="preview-item">
+            <p class="preview-item-label">互動小遊戲</p>
+            <p class="preview-item-text">用積木創造幫助場景</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-cta">
+        <p>想看完整 7 天對話？立即免費下載完整計畫 🤍</p>
+        <a href="#download" class="btn-primary">免費下載溫柔 AI 陪伴計畫</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer CTA -->
+  <section class="section-peach">
+    <div class="footer-cta">
+      <h2>溫柔，是最好的陪伴</h2>
+      <p>陪伴不在於時間長短，而在於那份全然的專注。</p>
+      <p class="last-p">願這七天，成為您與孩子心中最柔軟的記憶。</p>
+      <a href="https://line.me" target="_blank" rel="noopener noreferrer" class="btn-line">
+        加入 LINE 媽媽專屬社群
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AI媽媽研究室. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showDay(index, btn) {
+      document.querySelectorAll('.day-panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
+      document.getElementById('day-' + index).classList.add('active');
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
