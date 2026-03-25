@@ -181,7 +181,7 @@
       height: 11rem;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid var(--bg-peach);
+      border: 4px solid rgba(255,255,255,1);
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     }
     .about-name { color: var(--accent); font-weight: 600; margin-top: 0.75rem; }
@@ -312,16 +312,47 @@
       margin-bottom: 1rem;
     }
     .preview-question { font-size: 1.15rem; font-weight: 700; color: var(--dark); margin-bottom: 1.5rem; }
-    .preview-item {
-      background: var(--bg);
+    .preview-item1 {
+      background: #FAF3EF;
       border-radius: 0.75rem;
       padding: 1rem;
       margin-bottom: 0.75rem;
+      border-bottom-color: #ead2c7;
     }
     .preview-item-label {
       font-size: 0.72rem;
       font-weight: 700;
-      color: var(--accent);
+      color: #C4856A;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+      .preview-item2 {
+      background: #FAFAF9;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      border-bottom-color: #e7e5e4;
+    }
+    .preview-item-labe2 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #78716C;
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+      .preview-item3 {
+      background: #FFFAFA;
+      border-radius: 0.75rem;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+      border-bottom-color: #ffeaea;
+    }
+    .preview-item-labe3 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #ffa8aa;
       margin-bottom: 0.4rem;
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -355,7 +386,7 @@
 
     /* Footer */
     footer {
-      background: var(--bg-peach);
+      background: var(--bg);
       color: #b89080;
       text-align: center;
       padding: 1.5rem;
@@ -524,16 +555,16 @@
         <div class="day-panel active" id="day-0">
           <div class="day-badge">Day1</div>
           <p class="preview-question">今天最開心的是什麼？</p>
-          <div class="preview-item">
+          <div class="preview-item1">
             <p class="preview-item-label">媽媽溫柔提醒</p>
             <p class="preview-item-text">用表情和語氣放大孩子的情緒</p>
           </div>
           <div class="preview-item">
-            <p class="preview-item-label">AI 回應示範</p>
+            <p class="preview-item-labe2">AI 回應示範</p>
             <p class="preview-item-text">「聽起來你那時候真的好開心！」</p>
           </div>
           <div class="preview-item">
-            <p class="preview-item-label">互動小遊戲</p>
+            <p class="preview-item-labe3">互動小遊戲</p>
             <p class="preview-item-text">畫出今天開心或挑戰的場景，媽媽孩子互換看</p>
           </div>
         </div>
@@ -541,16 +572,16 @@
         <div class="day-panel" id="day-1">
           <div class="day-badge">Day2</div>
           <p class="preview-question">今天有沒有不喜歡的事情？</p>
-          <div class="preview-item">
-            <p class="preview-item-label">媽媽溫柔提醒</p>
+          <div class="preview-item2">
+            <p class="preview-item-labe1">媽媽溫柔提醒</p>
             <p class="preview-item-text">先理解，再給支持</p>
           </div>
           <div class="preview-item">
-            <p class="preview-item-label">AI 回應示範</p>
+            <p class="preview-item-labe2">AI 回應示範</p>
             <p class="preview-item-text">「是不是有一點不舒服？」</p>
           </div>
           <div class="preview-item">
-            <p class="preview-item-label">互動小遊戲</p>
+            <p class="preview-item-labe3">互動小遊戲</p>
             <p class="preview-item-text">用黏土捏出今天的不舒服或疲累情緒(沒有黏土也可以自製無毒黏土，用麵粉加水)</p>
           </div>
         </div>
@@ -558,16 +589,16 @@
         <div class="day-panel" id="day-2">
           <div class="day-badge">Day3</div>
           <p class="preview-question">如果今天是小超人，你想幫誰？</p>
-          <div class="preview-item">
+          <div class="preview-item3">
             <p class="preview-item-label">媽媽溫柔提醒</p>
             <p class="preview-item-text">讚美動機，而不是結果</p>
           </div>
           <div class="preview-item">
-            <p class="preview-item-label">AI 回應示範</p>
+            <p class="preview-item-labe2">AI 回應示範</p>
             <p class="preview-item-text">「你願意幫他，媽媽覺得你好溫暖。」</p>
           </div>
           <div class="preview-item">
-            <p class="preview-item-label">互動小遊戲</p>
+            <p class="preview-item-labe3">互動小遊戲</p>
             <p class="preview-item-text">用積木創造幫助場景</p>
           </div>
         </div>
